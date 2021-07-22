@@ -148,6 +148,10 @@ img {
     section {
         padding: 2em 2em;
     }
+
+    .gameclass:hover{
+        transform: scale(1.1);
+    }
 }
 
 
@@ -187,9 +191,6 @@ img {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
-}
-.gameclass:hover{
-    transform: scale(1.1);
 }
 
 .gameclass__sentinel, .gameclass__sage, .gameclass__shadow, .gameclass__commando, 
