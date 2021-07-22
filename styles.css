@@ -148,7 +148,9 @@ img {
     section {
         padding: 2em 2em;
     }
-
+    .gameclass {
+        transition: transform 200ms ease-in-out;
+    }
     .gameclass:hover{
         transform: scale(1.1);
     }
@@ -190,7 +192,6 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
 }
 
 .gameclass__sentinel, .gameclass__sage, .gameclass__shadow, .gameclass__commando, 
