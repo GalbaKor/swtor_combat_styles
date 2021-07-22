@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat Styles Guide</title>
+
+    <!-- Normalize and Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">SWTOR 7.0: Combat Styles</h1>
+        <h3>Updated as of June 22nd 2021</h3>
+        <h3 class="title__description">This site is intended as an unbiased guide to help explain how Combat Styles will work in 7.0 and how passives and abilities are chosen in the new ABC skill tree system.</h3>
+        <div class="title__list">
+            <a href="https://www.swtor.com/community/forumdisplay.php?f=308" class="devquote" target=blank>PTS Forums</a>
+            <a href="https://www.swtor.com/info/news" class="devquote" target=blank>SWTOR News</a>
+        </div>
+
+        
+    </header>
+
+    <!-- Introduction to Combat Styles -->
+    <section class="intro">
+        <h2 class="section__title section__title--intro">What are Combat Styles?</h2>
+        <div class="section__content section__content--intro">
+            <p>Combat Styles represents the newest way to play SWTOR by separating your story and gameplay. 
+                What this means in practice is that any Force wielding class can play any Force based advanced class and discipline. 
+                Likewise any Tech wielding class can play any Tech based advanced class and discipline.
+                What's more, you can change your advanced class and discipline at will, the same way you can switch disciplines or reset utilities on live. Play one PvP match as a Deception Assassin before respeccing as a Telekinetics Sage for some solo play.
+            </p>
+            <h3>Pick your starting class for the story -> play as any advanced class and discipline with the Force or Tech bubble.</h3>
+            <img src="images/combat_styles.png" alt="a graphic portraying the ability for force and tech users to pick any of their respective advanced classes" class="intro__image">
+            <p>For example; As a Jedi Guardian, you can play the normal Focus, Vigilance and Defense disciplines that are available to you on live, 
+                but you could also pick Deception from the Shadow, or Seer from the Sage advanced class. 
+                Going further, you can also choose the mirrored Sith Force user advanced class with all the lightning infused animations that brings.
+                That's right, you can finally roleplay a Jedi who slowly turns to the dark side, using Force Lightning and Choking your enemies, or be a Sith with a heart of gold.
+                The only caveat is that there is a light and dark side requirement for cross faction advanced classes - but this only applies to the Force using classes. 
+                A Mercenary could switch to using the Scoundrel's Ruffian discipline even if they are Dark 5 for e.g. The exact light and dark requirements are currently unknown.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Class Rebalancing -->
+    <section class="rebalancing">
+        <h2 class="section__title">Class Rebalancing and ABC</h2>
+        <h3 class="section__title__adendum">The below statements and opinions are that of the developers and not my own. I have attached links to certain quotes for further reading.</h3>
+        <div class="section__content section__content--rebalancing">
+            <p>As part of 7.0 classes are being rebalanced as part of an initiate by the developers to make classes <a href="https://www.swtor.com/info/news/article/20210709" class="devquote" target=blank>"feel less encumbered and customization more concise."</a>
+                This means that the amount of abilities available to each class will be reduced in order to make the relationships between active abilities and passive modifiers more immediately apparent. Streamlining features will also reduce the time needed to learn all of the new advanced classes you can now switch to.
+                In a follow up post, it was made known that this rebalancing also came about as a desire to reduce the quantity of defensive cooldowns as 
+                <a href="https://www.swtor.com/community/showthread.php?p=9957653#post9957653" class="devquote" target="blank">"it has made some PvE mechancics completely avoidable and made the time-to-kill metric in PVP grow steadily to the point where we are approaching tedious levels."</a>
+                Lastly it has been stated that NPC fights will be <a href="https://www.swtor.com/community/showthread.php?p=9957653#post9957653" class="devquote" target="blank">adjusted as needed to compensate</a> for the lack of defensives.
+                <br><br>
+                While stun breakers and interrupts were missing from the first PTS cycle, it has been confirmed in the above quoted dev post that they will return, but might not return in the same form that we currently know them. 
+                This is again part of the initiative to streamline class features without the need for extra button presses.
+                <br><br>
+                Utilities are also being removed to make way for the new ABC ability system, so named because every few levels (currently 5) one of the following will occur. You the player will:
+            </p>
+                <ul>
+                    <li>Receive a new ability</li>
+                    <li>Choose from 1 of 3 abilities</li>
+                    <li>Choose from 1 of 3 passives</li>or
+                    <li>Choose from 1 of 3 passives or abilities</li>
+                </ul> 
+            <p>An example of this can be found in the <a href="https://www.swtor.com/community/showthread.php?t=994963" class="devquote" target=blank>PTS forum post for the Jedi Guardian</a> where at level 10, you gain the Focused Burst active ability.<br>
+                At level 15 you choose either Blade Burst(A), Energy Barrage(B) or Saber throw(C). The first two being passives, the third being an active ability. <br>Again at level 20 you choose between 1 of 3 passives, 
+                while at level 70 you choose one ability between Saber Reflect(A), Blade Blitz(B) and Enure(C) - three abilities that all Guardians currently have on live. 
+                Each of these defensives currently include one or two of the current (live) utilities baseline - Saber Reflect has a 5 second duration, Enure cleanses hostile effects and Blade Blitz's cooldown is lower while also breaking immobilising effects. 
+                For those who don't play a Guardian, Saber Reflect has a 3s duration, Enure doesn't cleanse and Blade Blitz's cooldown is 10 seconds longer and doesn't break effects without utilities.
+                <br><br>
+                Below I will list out the Combat Style ABC options each class currently has on PTS. Greyed out options are not yet available to test. I will also list the abilities that are being removed/merged and those that are only available as part of the ABC system.
+                Lastly, I will attempt to compile community feedback and link to each class's dedicated feedback thread on the official forums.
+            </p>
+
+        </div>
+        
+
+
+    </section>
+
+    <section class="abc">
+    <nav class="abc__nav">
+        <!-- <ul class="nav__list">
+            <li class="nav__item">Guardian/Juggernaut</li>
+            <li class="nav__item">Sentinel/Marauder</li>
+            <li class="nav__item">Sage/Sorcerer</li>
+            <li class="nav__item">Shadow/Assassin</li>
+            <li class="nav__item">Commando/Mercenary</li>
+            <li class="nav__item">Vanguard/Powertech</li>
+            <li class="nav__item">Gunslinger/Sniper</li>
+            <li class="nav__item">Scoundrel/Smuggler</li>
+        </ul> -->
+        <div class="forceusers">
+            <a class="gameclass gameclass__guardian">Guardian/Juggernaut</a>
+            <div class="gameclass__abc gameclass__guardian__abc">
+                <h2 class="devquote gameclass__abc__title">Focus</h2>
+                <table class="gameclass__table gameclass__guardian__table">
+                    <tr>
+                        <th class="gameclass__table__level">Level</th>
+                        <th class="gameclass__table__abc">A</th>
+                        <th class="gameclass__table__abc">B</th>
+                        <th class="gameclass__table__abc">C</th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">10</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">15</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">20</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">25</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">30</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">35</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">40</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">45</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">50</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">55</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">60</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">65</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">70</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">75</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">80</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+
+                </table>
+                <h2 class="devquote gameclass__abc__title">Vigilance</h2>
+                <table class="gameclass__table gameclass__guardian__table">
+                    <tr>
+                        <th class="gameclass__table__level">Level</th>
+                        <th class="gameclass__table__abc">A</th>
+                        <th class="gameclass__table__abc">B</th>
+                        <th class="gameclass__table__abc">C</th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">10</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">15</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">20</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">25</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">30</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">35</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">40</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">45</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">50</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">55</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">60</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">65</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">70</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">75</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">80</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+
+                </table>
+                <h2 class="devquote gameclass__abc__title">Defense</h2>
+                <table class="gameclass__table gameclass__guardian__table">
+                    <tr>
+                        <th class="gameclass__table__level">Level</th>
+                        <th class="gameclass__table__abc">A</th>
+                        <th class="gameclass__table__abc">B</th>
+                        <th class="gameclass__table__abc">C</th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">10</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">15</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">20</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">25</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">30</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">35</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">40</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">45</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">50</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">55</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">60</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">65</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">70</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">75</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+                    <tr>
+                        <th class="gameclass__table__level">80</th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                        <th class="gameclass__table__abc"></th>
+                    </tr>
+
+                </table>
+            </div>
+            <a class="gameclass gameclass__sentinel">Sentinel/Marauder</a>
+            <a class="gameclass gameclass__sage">Sage/Sorcerer</a>
+            <a class="gameclass gameclass__shadow">Shadow/Assassin</a>
+        </div>
+        <div class="techusers">
+            <a class="gameclass gameclass__commando">Commando/Mercenary</a>
+            <a class="gameclass gameclass__vanguard">Vanguard/Powertech</a>
+            <a class="gameclass gameclass__gunslinger">Gunslinger/Sniper</a>
+            <a class="gameclass gameclass__scoundrel">Scoundrel/Smuggler</a>
+        </div>
+        
+    </nav>
+    </section>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
