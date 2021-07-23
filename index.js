@@ -23,23 +23,22 @@ sageToggle.addEventListener('click', () => {
     document.body.classList.toggle('gameclass__sage--on');
 });
 
-scoundrelToggle.addEventListener('click', () => {
+shadowToggle.addEventListener('click', () => {
     document.body.classList.toggle('gameclass__shadow--on');
 });
 
-shadowToggle.addEventListener('click', () => {
+commandoToggle.addEventListener('click', () => {
     document.body.classList.toggle('gameclass__commando--on');
 });
 
-commandoToggle.addEventListener('click', () => {
+vanguardToggle.addEventListener('click', () => {
     document.body.classList.toggle('gameclass__vanguard--on');
 });
 
-vanguardToggle.addEventListener('click', () => {
+gunslingerToggle.addEventListener('click', () => {
     document.body.classList.toggle('gameclass__gunslinger--on');
 });
 
-gunslingerToggle.addEventListener('click', () => {
+scoundrelToggle.addEventListener('click', () => {
     document.body.classList.toggle('gameclass__scoundrel--on');
 });
-

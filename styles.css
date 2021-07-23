@@ -215,14 +215,21 @@ margin-left: auto;
 }
 .gameclass__table__abc {
     width: 28.3%;
+    color: var(--clr-dev) !important;
+}
+.gameclass__table__abc--title {
+    width: 28.3%;
+}
+.gameclass__table__ability {
+    width: 84.9%;
+    color: #ce49b8 !important;
+}
+.gameclass__table__abc--ability {
+    width: 28.3%;
+    color: #ce49b8 !important;
 }
 
-.gameclass__guardian__abc {
-    display: none;
-}
-.gameclass__guardian--on .gameclass__guardian__abc{
-    display: block;
-}
+
 
 .gameclass__abc__title {
     /* padding: .5rem; */
@@ -232,3 +239,65 @@ margin-left: auto;
     margin-left: auto;
     margin-right: auto;
 }
+
+.gameclass__1, .gameclass__2, .gameclass__3 {
+    margin-bottom: 5rem;
+}
+
+
+
+.gameclass__guardian__abc {
+    display: none;
+}
+.gameclass__guardian--on .gameclass__guardian__abc{
+    display: block;
+}
+
+.gameclass__sentinel__abc {
+    display: none;
+}
+/* .gameclass__sentinel--on .gameclass__sentinel__abc{
+    display: block;
+} */
+
+.gameclass__sage__abc {
+    display: none;
+}
+/* .gameclass__sage--on .gameclass__sage__abc{
+    display: block;
+} */
+
+.gameclass__shadow__abc {
+    display: none;
+}
+/* .gameclass__shadow--on .gameclass__shadow__abc{
+    display: block;
+} */
+
+.gameclass__commando__abc {
+    display: none;
+}
+.gameclass__commando--on .gameclass__commando__abc{
+    display: block;
+}
+
+.gameclass__vanguard__abc {
+    display: none;
+}
+/* .gameclass__vanguard--on .gameclass__vanguard__abc{
+    display: block;
+} */
+
+.gameclass__gunslinger__abc {
+    display: none;
+}
+/* .gameclass__gunslinger--on .gameclass__gunslinger__abc{
+    display: block;
+} */
+
+.gameclass__scoundrel__abc {
+    display: none;
+}
+/* .gameclass__scoundrel--on .gameclass__scoundrel__abc{
+    display: block;
+} */
