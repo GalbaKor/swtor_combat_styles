@@ -64,8 +64,21 @@ p {
     font-family: var(--ff-secondary);
 }
 .devquote {
-    color: var(--clr-dev)
+    color: var(--clr-dev);
 }
+.devquote--big {
+    color: var(--clr-dev);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.pts__status__link {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
 
 body {
     background: var(--clr-dark);
@@ -155,6 +168,28 @@ img {
         transform: scale(1.1);
     }
 }
+.pts__status--wrapper, .pts__status {
+    display: none;
+}
+@media (min-width: 1024px) {
+    .pts__status--wrapper {
+        /* margin-top: 5rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pts__status {
+        display: block;
+        width: 1000px;
+        height:800px;
+    }
+}
+.pts__status--title {
+    margin-top: 5rem;
+}
+
+
+
 
 
 /* Buttons */
