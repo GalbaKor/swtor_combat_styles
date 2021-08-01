@@ -139,6 +139,10 @@ img {
     text-align: center;
 }
 
+.abc__notes {
+    list-style: none;
+}
+
 @media (min-width: 1200px){
     .abc__nav{
         margin-left: 5em;
@@ -229,7 +233,7 @@ img {
     font-weight: var(--fw-bold);
 }
 
-.gameclass__sentinel, .gameclass__sage, .gameclass__shadow, .gameclass__commando, 
+.gameclass__sage, .gameclass__shadow, .gameclass__commando, 
 .gameclass__vanguard, .gameclass__gunslinger, .gameclass__scoundrel {
     opacity: 0.3;
 }
@@ -291,9 +295,9 @@ margin-left: auto;
 .gameclass__sentinel__abc {
     display: none;
 }
-/* .gameclass__sentinel--on .gameclass__sentinel__abc{
+.gameclass__sentinel--on .gameclass__sentinel__abc{
     display: block;
-} */
+}
 
 .gameclass__sage__abc {
     display: none;

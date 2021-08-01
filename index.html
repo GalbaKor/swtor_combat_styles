@@ -21,11 +21,16 @@
 <body>
     <header>
         <h1 class="title">SWTOR 7.0: Combat Styles</h1>
-        <h3>Updated as of June 22nd 2021</h3>
+        <h3>Updated as of August 1st 2021</h3>
+        
         <h3 class="title__description">This site is intended as an unbiased guide to help explain how Combat Styles will work in 7.0 and how passives and abilities are chosen in the new ABC skill tree system.</h3>
         <div class="title__list">
             <a href="https://www.swtor.com/community/forumdisplay.php?f=308" class="devquote" target=blank>PTS Forums</a>
             <a href="https://www.swtor.com/info/news" class="devquote" target=blank>SWTOR News</a>
+        </div>
+        <br>
+        <div class="title__list">
+            <a href="#abc" class="devquote">Skip to PTS ABC guide</a>
         </div>
 
         
@@ -88,12 +93,12 @@
                 <a href="https://www.swtor.com/community/showthread.php?t=994939" target=blank class="devquote--big">Current PTS cycle: 1 - Jedi Guardian High Level Overview</a>
             </div>
             <div class="pts__status--wrapper">
-                <iframe class="pts__status" title="current pts cycle" src="https://www.swtor.com/community/showthread.php?t=994939/#posts" scrolling="no" Set-Cookie: promo_shown=1; SameSite=Lax; Secure></iframe>
+                <iframe class="pts__status" title="current pts cycle" src="https://www.swtor.com/community/showthread.php?t=994939/#posts" scrolling="yes" Set-Cookie: promo_shown=1; SameSite=Lax; Secure></iframe>
             </div>
         </div>
     </section>
 
-    <section class="abc">
+    <section class="abc" id="abc">
     <nav class="abc__nav">
         <!-- <ul class="nav__list">
             <li class="nav__item">Guardian/Juggernaut</li>
@@ -109,6 +114,11 @@
             <!-- Guardian -->
             <a class="gameclass gameclass__guardian">Guardian/Juggernaut</a>
             <div class="gameclass__abc gameclass__guardian__abc">
+                <ul class="abc__notes">
+                    <li>Pruned abilities: Force Clarity, Freezing Force, Guardian Leap (for non tanks), Challenging Call (for non tanks)</li>
+                    <li>ABC locked abilities: Saber Throw, Awe, Blade Blitz, Saber Reflect, Enure</li>
+                    <li>Focused Defence and dispatch are now on all specs as of PTS Cycle 2</li>
+                </ul>
                 <!-- FOCUS -->
                 <div class="gameclass__1">
                 <h2 class="devquote gameclass__abc__title">Focus</h2>
@@ -454,10 +464,15 @@
             <!-- Sentinel -->
             <a class="gameclass gameclass__sentinel">Sentinel/Marauder</a>
             <div class="gameclass__abc gameclass__sentinel__abc">
-                <!-- FOCUS -->
+                <ul class="abc__notes">
+                    <li>Pruned abilities: Crippling Slash, Obfuscate</li>
+                    <li>ABC locked abilities: Force Clarity, Transcendence, Blade Blitz, Guarded by the Force, Force Camouflage</li>
+                    <li>Missing Force Stasis confirmed a bug.</li>
+                </ul>
+                <!-- Watchman -->
                 <div class="gameclass__1">
-                <h2 class="devquote gameclass__abc__title">Focus</h2>
-                <table class="gameclass__table gameclass__guardian__table">
+                <h2 class="devquote gameclass__abc__title">Watchman</h2>
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">Level</th>
                         <th class="gameclass__table__abc--title">A</th>
@@ -465,335 +480,376 @@
                         <th class="gameclass__table__abc--title">C</th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">10</th>
-                        <th class="gameclass__table__ability">Focused Burst - single target burst damage ability</th>
+                        <th class="gameclass__table__ability">Gain Zen and Force Melt</th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">15</th>
-                        <th class="gameclass__table__abc">Energy Barrage - Adds Energy Damage to Blade Barrage and it now immobilizes the target. </th>
-                        <th class="gameclass__table__abc">Blade Burst - Blade Storm becomes AoE and slows</th>
-                        <th class="gameclass__table__abc--ability">Saber Throw - Gain the Saber Throw Ability</th>
+                        <th class="gameclass__table__abc">Melting Center - Force Melt’s initial damage is quadrupled when it consumes a Zen charge.</th>
+                        <th class="gameclass__table__abc">Juyo Melt - Force Melt immediately builds 6 Juyo Form stacks. Force Melt damage is increased per Juyo Form stack.</th>
+                        <th class="gameclass__table__abc">Critical Melt - While Force Melt is on a target, the crit chance of all your burn attacks on that target increases</th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">20</th>
-                        <th class="gameclass__table__abc">Zenith - Increases critical chance after using Focused Burst</th>
-                        <th class="gameclass__table__abc">Focusing Strike - Focused Burst deals 15% more damage</th>
-                        <th class="gameclass__table__abc">Unstable Focus - Focused Burst now hits in AoE</th>
+                        <th class="gameclass__table__abc">Blade Barrage + Burning Barrage - Blade Barrage deals additional burning damage on each hit and immobilizes the target for 3 seconds</th>
+                        <th class="gameclass__table__abc">Slash + Snaring Slash - Slash now slows the target by 50% for 10 seconds</th>
+                        <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide speed and defense buff. Also breaks roots and snares
+                        </th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">25</th>
-                        <th class="gameclass__table__ability">Zealous Leap - A short ranged leap with high damage</th>
+                        <th class="gameclass__table__ability">Gain Cauterize</th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">30</th>
-                        <th class="gameclass__table__abc">Zealous Discovery - Reduce the CD of Combat Focus every time you activate Zealous Leap</th>
-                        <th class="gameclass__table__abc">Zealous Defense - Receive a small shield every time Zealous Leap hits a target</th>
-                        <th class="gameclass__table__abc">Zealous Annihilation - Zealous Leap now also hits in AoE</th>
+                        <th class="gameclass__table__abc">Cauterizing Focus - When activating Cauterize consumes a Zen charge, it immediately refunds 2 Focus. Applies trauma</th>
+                        <th class="gameclass__table__abc">Force Lash - Direct Force attack that’s damage and crit chance are scaled by the number of burns currently on the target</th>
+                        <th class="gameclass__table__abc">Flaming Wave - Cauterize procs a Flaming Wave version of Force Sweep when activated.
+                        </th>
                     </tr>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">35</th>
+                            <th class="gameclass__table__ability">Gain Valorous Call</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">35</th>
-                        <th class="gameclass__table__abc">Focused Mediation - Dealing damage with Force Energy generates AP</th>
-                        <th class="gameclass__table__abc">Critical Conditions - Critical hits with Force Energy reduce the Cooldown of Combat Focus</th>
-                        <th class="gameclass__table__abc--ability">Awe - Gain the Awe Ability</th>
+                        <th class="gameclass__table__abc">Burning Zen - Activating Zen immediately maxes out your Focus and makes your next direct attack critically hit. Periodic burn damage no longer consumes Zen charges</th>
+                        <th class="gameclass__table__abc">Burning Center - Build Centering even during Zen. Consuming a charge of Zen builds 1 Centering.</th>
+                        <th class="gameclass__table__abc--ability">Force Clarity / Furious Power - Next attack deals 25% more damage</th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                </table>
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">40</th>
-                        <th class="gameclass__table__ability">Force Exhaustion - Slow the target and apply a high damage DoT</th>
+                        <th class="gameclass__table__ability">Gain Merciless Slash
+                        </th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">45</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        <th class="gameclass__table__ability">Gain Twin Saber Throw
+                        </th>
                     </tr>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">50</th>
-                        <th class="gameclass__table__abc">Battlefield Command - Taking damage reduces the Cooldown of Force Leap</th>
-                        <th class="gameclass__table__abc">Path Carver- Increases AoE damage done</th>
-                        <th class="gameclass__table__abc">Defiance - Build AP whenever you are stunned</th>
+                        <th class="gameclass__table__abc">Adamant - Builds Focus when crowd controlled</th>
+                        <th class="gameclass__table__abc">Intercessor -Charge grants extra charge, now grants 2 Centering.</th>
+                        <th class="gameclass__table__abc">Defensive Roll - Reduces AOE damage taken.</th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">55</th>
-                        <th class="gameclass__table__ability">Concentrated Slice - A strong single-target weapon attack</th>
+                        <th class="gameclass__table__ability">Gain Overload Saber
+                        </th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">60</th>
-                        <th class="gameclass__table__abc">Preparation - Leaving combat now reduces the remaining cooldown on some skills</th>
-                        <th class="gameclass__table__abc">Narrowed Focus - Taking AoE damage now generates AP</th>
-                        <th class="gameclass__table__abc">Second Wind - Lowers the cooldown of Unleash. Unleash now also heals you</th>
+                        <th class="gameclass__table__abc">Trailblazer - Increases certain AOE damage</th>
+                        <th class="gameclass__table__abc">Jedi Crusader - While Rebuke is active, it generates 1 Focus whenever you are attacked.</th>
+                        <th class="gameclass__table__abc">Zealous Ward - Getting hit during Saber Ward heals you and grants crowd control immunity.
+                        </th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">65</th>
                         <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">70</th>
+                        <th class="gameclass__table__abc--ability">Guarded by the Force</th>
                         <th class="gameclass__table__abc--ability">Blade Blitz</th>
-                        <th class="gameclass__table__abc--ability">Saber Reflect</th>
-                        <th class="gameclass__table__abc--ability">Enure</th>
+                        <th class="gameclass__table__abc--ability">Force Camouflage</th>
                     </tr>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">75</th>
                         <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
                     </tr>
                 </table>
-                <table class="gameclass__table gameclass__guardian__table">
+                <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">80</th>
-                        <th class="gameclass__table__abc">(A+B choice on PTS)War Master - Force Leap grants immunity to movement impairing effects and grants Dispatch</th>
-                        <th class="gameclass__table__abc">Purifying Sweep - Sweep now applies debuffs</th>
-                        <th class="gameclass__table__abc">Through Peace - Reduces Enure’s Cooldown</th>
+                        <th class="gameclass__table__abc">Stoic - Increases damage reduction, builds centering when attacked</th>
+                        <th class="gameclass__table__abc">Incisor - Adds snare to certain attacks</th>
+                        <th class="gameclass__table__abc">Contemplation - Resting increases Fury/Centering.
+                        </th>
                     </tr>
                 </table>
                 </div>
-                <!-- VIGILANCE -->
+                <!-- Combat -->
                 <div class="gameclass__2">
-                <h2 class="devquote gameclass__abc__title">Vigilance</h2>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">Level</th>
-                        <th class="gameclass__table__abc--title">A</th>
-                        <th class="gameclass__table__abc--title">B</th>
-                        <th class="gameclass__table__abc--title">C</th>
-                    </tr>
-                </table>
+                    <h2 class="devquote gameclass__abc__title">Combat</h2>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">Level</th>
+                            <th class="gameclass__table__abc--title">A</th>
+                            <th class="gameclass__table__abc--title">B</th>
+                            <th class="gameclass__table__abc--title">C</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">10</th>
+                            <th class="gameclass__table__ability">Gain Zen and Lance</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">15</th>
+                            <th class="gameclass__table__abc">Zen Lance - Whenever Lance consumes a stack of Zen, its cooldown is reset</th>
+                            <th class="gameclass__table__abc">Puncture - Lance deals force energy damage in a straight line behind the target, piercing through multiple enemies.</th>
+                            <th class="gameclass__table__abc">Driving Lance - Lance now leaps to target, deals more damage and deals additional damage for each 10% of movement speed you have over 100%.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="gameclass__table__level">20</th>
+                            <th class="gameclass__table__abc">Blade Barrage - Now deals additional force energy damage on each hit</th>
+                            <th class="gameclass__table__abc">Slash - Slash now slows the target by 50% for 10 seconds</th>
+                            <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide speed and defense buff. Also breaks roots and snares
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">25</th>
+                            <th class="gameclass__table__ability">Gain Blade Rush</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">30</th>
+                            <th class="gameclass__table__abc">Valor Blade - Activating Blade Rush reduces the cooldown of Valorous Call by 2 seconds and its critical hit chance is increased.</th>
+                            <th class="gameclass__table__abc"> Defensive Flourish - Activating Blade Rush increases your damage reduction slightly after each use.</th>
+                            <th class="gameclass__table__abc">Rush Down - Blade Rush deals more damage for each 10% movement speed you have over 100%.
+                            </th>
+                        </tr>
+                        <table class="gameclass__table gameclass__sentinel__table">
+                            <tr>
+                                <th class="gameclass__table__level">35</th>
+                                <th class="gameclass__table__ability">Gain Valorous Call</th>
+                            </tr>
+                        </table>
+                        <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">35</th>
+                            <th class="gameclass__table__abc">Quickness - Dealing energy damage reduces the cooldown of each of your Focus spending attacks by 1 second.</th>
+                            <th class="gameclass__table__abc">Swiftness - Whenever you critically hit, your movement speed increases by 5% and crit chance by 2%, stacking up to 5 times.</th>
+                            <th class="gameclass__table__abc--ability">Force Clarity - Next attack deals 25% more damage
+                            </th>
+                        </tr>
+                    </table>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">40</th>
+                            <th class="gameclass__table__ability">Gain Precision
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="gameclass__table__level">45</th>
+                            <th class="gameclass__table__ability">Gain Twin Saber Throw
+                            </th>
+                        </tr>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">50</th>
+                            <th class="gameclass__table__abc">Defensive Roll - Reduces AOE damage taken and increases damage reduction</th>
+                            <th class="gameclass__table__abc">Intercessor -Charge grants extra charge, now grants 2 Centering.</th>
+                            <th class="gameclass__table__abc">Adamant - Build 4 Focus when crowd controlled.
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">55</th>
+                            <th class="gameclass__table__ability">Gain Clashing Blast
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">60</th>
+                            <th class="gameclass__table__abc">Zealous Ward. Getting hit during Saber Ward heals you and grants crowd control immunity.</th>
+                            <th class="gameclass__table__abc">Trailblazer. Increases certain AOE damage.</th>
+                            <th class="gameclass__table__abc">Jedi Crusader. While Rebuke is active, it generates 1 Focus whenever you are attacked.
 
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">10</th>
-                        <th class="gameclass__table__ability">Focused Burst - single target burst damage ability</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">15</th>
-                        <th class="gameclass__table__abc">Energy Barrage - Adds Energy Damage to Blade Barrage and it now immobilizes the target. </th>
-                        <th class="gameclass__table__abc">Blade Burst - Blade Storm becomes AoE and slows</th>
-                        <th class="gameclass__table__abc--ability">Saber Throw - Gain the Saber Throw Ability</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">20</th>
-                        <th class="gameclass__table__abc">Zenith - Increases critical chance after using Focused Burst</th>
-                        <th class="gameclass__table__abc">Focusing Strike - Focused Burst deals 15% more damage</th>
-                        <th class="gameclass__table__abc">Unstable Focus - Focused Burst now hits in AoE</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">25</th>
-                        <th class="gameclass__table__ability">Zealous Leap - A short ranged leap with high damage</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">30</th>
-                        <th class="gameclass__table__abc">Zealous Discovery - Reduce the CD of Combat Focus every time you activate Zealous Leap</th>
-                        <th class="gameclass__table__abc">Zealous Defense - Receive a small shield every time Zealous Leap hits a target</th>
-                        <th class="gameclass__table__abc">Zealous Annihilation - Zealous Leap now also hits in AoE</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">35</th>
-                        <th class="gameclass__table__abc">Focused Mediation - Dealing damage with Force Energy generates AP</th>
-                        <th class="gameclass__table__abc">Critical Conditions - Critical hits with Force Energy reduce the Cooldown of Combat Focus</th>
-                        <th class="gameclass__table__abc--ability">Awe - Gain the Awe Ability</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">40</th>
-                        <th class="gameclass__table__ability">Force Exhaustion - Slow the target and apply a high damage DoT</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">45</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">50</th>
-                        <th class="gameclass__table__abc">Battlefield Command - Taking damage reduces the Cooldown of Force Leap</th>
-                        <th class="gameclass__table__abc">Path Carver- Increases AoE damage done</th>
-                        <th class="gameclass__table__abc">Defiance - Build AP whenever you are stunned</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">55</th>
-                        <th class="gameclass__table__ability">Concentrated Slice - A strong single-target weapon attack</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">60</th>
-                        <th class="gameclass__table__abc">Preparation - Leaving combat now reduces the remaining cooldown on some skills</th>
-                        <th class="gameclass__table__abc">Narrowed Focus - Taking AoE damage now generates AP</th>
-                        <th class="gameclass__table__abc">Second Wind - Lowers the cooldown of Unleash. Unleash now also heals you</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">65</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">70</th>
-                        <th class="gameclass__table__abc--ability">Blade Blitz</th>
-                        <th class="gameclass__table__abc--ability">Saber Reflect</th>
-                        <th class="gameclass__table__abc--ability">Enure</th>
-                    </tr>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">75</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">80</th>
-                        <th class="gameclass__table__abc">(A+B choice on PTS)War Master - Force Leap grants immunity to movement impairing effects and grants Dispatch</th>
-                        <th class="gameclass__table__abc">Purifying Sweep - Sweep now applies debuffs</th>
-                        <th class="gameclass__table__abc">Through Peace - Reduces Enure’s Cooldown</th>
-                    </tr>
-                </table>
-                </div>
-                <!-- DEFENSE -->
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">65</th>
+                            <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">70</th>
+                            <th class="gameclass__table__abc--ability">Blade Blitz</th>
+                            <th class="gameclass__table__abc--ability">Force Camouflage</th>
+                            <th class="gameclass__table__abc--ability">Guarded By the Force</th>
+                        </tr>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">75</th>
+                            <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">80</th>
+                            <th class="gameclass__table__abc">Incisor - Adds snare to certain attacks</th>
+                            <th class="gameclass__table__abc">Contemplation - Resting increases Centering.</th>
+                            <th class="gameclass__table__abc">Stoic - Reduces damage taken and builds centering when attacked.
+                            </th>
+                        </tr>
+                    </table>
+                    </div>
+                <!-- Concentration -->
                 <div class="gameclass__3">
-                <h2 class="devquote gameclass__abc__title">Defense</h2>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">Level</th>
-                        <th class="gameclass__table__abc--title">A</th>
-                        <th class="gameclass__table__abc--title">B</th>
-                        <th class="gameclass__table__abc--title">C</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">10</th>
-                        <th class="gameclass__table__ability">Focused Burst - single target burst damage ability</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">15</th>
-                        <th class="gameclass__table__abc">Energy Barrage - Adds Energy Damage to Blade Barrage and it now immobilizes the target. </th>
-                        <th class="gameclass__table__abc">Blade Burst - Blade Storm becomes AoE and slows</th>
-                        <th class="gameclass__table__abc--ability">Saber Throw - Gain the Saber Throw Ability</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">20</th>
-                        <th class="gameclass__table__abc">Zenith - Increases critical chance after using Focused Burst</th>
-                        <th class="gameclass__table__abc">Focusing Strike - Focused Burst deals 15% more damage</th>
-                        <th class="gameclass__table__abc">Unstable Focus - Focused Burst now hits in AoE</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">25</th>
-                        <th class="gameclass__table__ability">Zealous Leap - A short ranged leap with high damage</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">30</th>
-                        <th class="gameclass__table__abc">Zealous Discovery - Reduce the CD of Combat Focus every time you activate Zealous Leap</th>
-                        <th class="gameclass__table__abc">Zealous Defense - Receive a small shield every time Zealous Leap hits a target</th>
-                        <th class="gameclass__table__abc">Zealous Annihilation - Zealous Leap now also hits in AoE</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">35</th>
-                        <th class="gameclass__table__abc">Focused Mediation - Dealing damage with Force Energy generates AP</th>
-                        <th class="gameclass__table__abc">Critical Conditions - Critical hits with Force Energy reduce the Cooldown of Combat Focus</th>
-                        <th class="gameclass__table__abc--ability">Awe - Gain the Awe Ability</th>
-                    </tr>
-                </table>
-
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">40</th>
-                        <th class="gameclass__table__ability">Force Exhaustion - Slow the target and apply a high damage DoT</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">45</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">50</th>
-                        <th class="gameclass__table__abc">Battlefield Command - Taking damage reduces the Cooldown of Force Leap</th>
-                        <th class="gameclass__table__abc">Path Carver- Increases AoE damage done</th>
-                        <th class="gameclass__table__abc">Defiance - Build AP whenever you are stunned</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">55</th>
-                        <th class="gameclass__table__ability">Concentrated Slice - A strong single-target weapon attack</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">60</th>
-                        <th class="gameclass__table__abc">Preparation - Leaving combat now reduces the remaining cooldown on some skills</th>
-                        <th class="gameclass__table__abc">Narrowed Focus - Taking AoE damage now generates AP</th>
-                        <th class="gameclass__table__abc">Second Wind - Lowers the cooldown of Unleash. Unleash now also heals you</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">65</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">70</th>
-                        <th class="gameclass__table__abc--ability">Blade Blitz</th>
-                        <th class="gameclass__table__abc--ability">Saber Reflect</th>
-                        <th class="gameclass__table__abc--ability">Enure</th>
-                    </tr>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">75</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">80</th>
-                        <th class="gameclass__table__abc">(A+B choice on PTS)War Master - Force Leap grants immunity to movement impairing effects and grants Dispatch</th>
-                        <th class="gameclass__table__abc">Purifying Sweep - Sweep now applies debuffs</th>
-                        <th class="gameclass__table__abc">Through Peace - Reduces Enure’s Cooldown</th>
-                    </tr>
-                </table>
-                </div>
+                    <h2 class="devquote gameclass__abc__title">Concentration</h2>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">Level</th>
+                            <th class="gameclass__table__abc--title">A</th>
+                            <th class="gameclass__table__abc--title">B</th>
+                            <th class="gameclass__table__abc--title">C</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">10</th>
+                            <th class="gameclass__table__ability">Gain Zen and Focused Burst</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">15</th>
+                            <th class="gameclass__table__abc">Zenith - Modifies Heightened Power to also increase crit chance by 20% in addition to increasing damage by 5%</th>
+                            <th class="gameclass__table__abc">Unstable Focus - Focused Burst does AOE damage to enemies around the primary target.</th>
+                            <th class="gameclass__table__abc">Focusing Strike - Focused Burst deals more damage the more Focus you have and applies trauma.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="gameclass__table__level">20</th>
+                            <th class="gameclass__table__abc">Kinetic Barrage - Blade Barrage deals additional Force kinetic damage</th>
+                            <th class="gameclass__table__abc">Slash + Snaring Slash - Slash now slows the target by 50% for 10 seconds</th>
+                            <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide speed and defense buff. Also breaks roots and snares
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">25</th>
+                            <th class="gameclass__table__ability">Gain Zealous Leap
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">30</th>
+                            <th class="gameclass__table__abc">Zealous Annihilation - Killing an enemy within 3 seconds of dealing damage with Zealous Leap resets its cooldown and increases its damage by 25% for 6 seconds.</th>
+                            <th class="gameclass__table__abc">Zealous Discovery - Zealous Leap immediately builds 10 Centering.</th>
+                            <th class="gameclass__table__abc">Zealous Defense - Zealous Leap puts a mini Saber Ward on you for 2 seconds.
+                            </th>
+                        </tr>
+                        <table class="gameclass__table gameclass__sentinel__table">
+                            <tr>
+                                <th class="gameclass__table__level">35</th>
+                                <th class="gameclass__table__ability">Gain Valorous Call</th>
+                            </tr>
+                        </table>
+                        <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">35</th>
+                            <th class="gameclass__table__abc">Focused Meditation - Each time you deal damage with a force energy attack, you generate 1 Focus</th>
+                            <th class="gameclass__table__abc">Criticality - Critically hitting with a force energy attack builds 1 Centering. You can build Centering even during Zen.</th>
+                            <th class="gameclass__table__abc--ability">Force Clarity / Furious Power - Next attack deals 25% more damage</th>
+                        </tr>
+                    </table>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">40</th>
+                            <th class="gameclass__table__ability">Gain Force Exhaustion
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="gameclass__table__level">45</th>
+                            <th class="gameclass__table__ability">Gain Twin Saber Throw
+                            </th>
+                        </tr>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">50</th>
+                            <th class="gameclass__table__abc">Adamant - Builds Focus when crowd controlled</th>
+                            <th class="gameclass__table__abc">Intercessor -Charge grants extra charge, now grants 2 Centering.</th>
+                            <th class="gameclass__table__abc">Defensive Roll - Reduces AOE damage taken.</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">55</th>
+                            <th class="gameclass__table__ability">Gain Concentrated Slice
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">60</th>
+                            <th class="gameclass__table__abc">Trailblazer - Increases certain AOE damage</th>
+                            <th class="gameclass__table__abc">Jedi Crusader - While Rebuke is active, it generates 1 Focus whenever you are attacked.</th>
+                            <th class="gameclass__table__abc">Zealous Ward - Getting hit during Saber Ward heals you and grants crowd control immunity.
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">65</th>
+                            <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">70</th>
+                            <th class="gameclass__table__abc--ability">Blade Blitz</th>
+                            <th class="gameclass__table__abc--ability">Force Camouflage</th>
+                            <th class="gameclass__table__abc--ability">Guarded by the Force</th>
+                        </tr>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">75</th>
+                            <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        </tr>
+                    </table>
+                    <table class="gameclass__table gameclass__sentinel__table">
+                        <tr>
+                            <th class="gameclass__table__level">80</th>
+                            <th class="gameclass__table__abc">Stoic - Increases damage reduction, builds centering when attacked</th>
+                            <th class="gameclass__table__abc">Contemplation - Resting increases Fury/Centering.</th>
+                            <th class="gameclass__table__abc">Incisor - Adds snare to certain attacks.
+                            </th>
+                        </tr>
+                    </table>
+                    </div>
             </div>
 
             <!-- Sage -->
