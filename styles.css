@@ -1,342 +1,353 @@
 @font-face {
-    font-family: 'STARWARS';
-    src: url('http://www.fontsaddict.com/fontface/starwars.TTF');
-  }
+  font-family: "STARWARS";
+  src: url("http://www.fontsaddict.com/fontface/starwars.TTF");
+}
 
 /* custom properties  */
 :root {
-    /* font family primary and secondary */
-    --ff-primary: 'Hind Siliguri', sans-serif;
-    --ff-secondary: 'Georgia', serif;
+  /* font family primary and secondary */
+  --ff-primary: "Hind Siliguri", sans-serif;
+  --ff-secondary: "Georgia", serif;
 
-    --fw-reg: 300;
-    --fw-bold: 900;
+  --fw-reg: 300;
+  --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #000000;
-    --clr-accent: #cc9e42;
-    --clr-dev: #f9d648;
+  --clr-light: #fff;
+  --clr-dark: #000000;
+  --clr-accent: #cc9e42;
+  --clr-dev: #f9d648;
 
-    /* rem changes size relatively */
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+  /* rem changes size relatively */
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-         .125em 0.125em 0.25em rgba(0,0,0,.15);
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
-    /* automatically increases font size at higher screen sizes */
-    :root {
-        --fs-h1: 5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
+  /* automatically increases font size at higher screen sizes */
+  :root {
+    --fs-h1: 5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
 }
 
-strong { font-weight: var(--fw-bold);}
+strong {
+  font-weight: var(--fw-bold);
+}
 
 /* bit different to hover, if you tab onto the button it pops out to show that it is focused */
 :focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
 }
-
-
 
 /* General Styles */
 
 html {
-    /* adds smooth scrolling so when the nav is clicked, it smoothly moves down */
-    scroll-behavior: smooth;
+  /* adds smooth scrolling so when the nav is clicked, it smoothly moves down */
+  scroll-behavior: smooth;
 }
 
-h1,h2 {
-    color: var(--clr-accent);
+h1,
+h2 {
+  color: var(--clr-accent);
 }
-h1,h2,h3 {
-    text-align: center;
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 p {
-    font-family: var(--ff-secondary);
+  font-family: var(--ff-secondary);
 }
 .devquote {
-    color: var(--clr-dev);
+  color: var(--clr-dev);
 }
 .devquote--big {
-    color: var(--clr-dev);
-    font-size: 1.5rem;
-    font-weight: bold;
+  color: var(--clr-dev);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .pts__status__link {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3rem;
-    margin-top: 5rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
 }
 
-
 body {
-    background: var(--clr-dark);
-    color: var(--clr-light);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.8;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.8;
 }
 
 header {
-    display: block;
-    justify-content: space-between;
-    padding: 1em;
+  display: block;
+  justify-content: space-between;
+  padding: 1em;
 }
 .title__list {
-    text-align: center;
+  text-align: center;
 }
-.title__list a{
-    margin-right: 1rem;
-    margin-left: 1rem;
-    font-size: 1.5em
+.title__list a {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: 1.5em;
 }
 
 section {
-    padding: 1em 1em;
+  padding: 1em 1em;
 }
-.section__content p,ul {
-    max-width: 1400px;
-    margin: 0 auto;
+.section__content p,
+ul {
+  max-width: 1400px;
+  margin: 0 auto;
 }
-.section__content ul{
-    margin-top: 1em;
-    margin-bottom: 1em;
+.section__content ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 img {
-    /* block removes some issues and 100% prevents them escaping their box */
-    display: block;
-    max-width: 100%;
+  /* block removes some issues and 100% prevents them escaping their box */
+  display: block;
+  max-width: 100%;
 }
 
-.intro__image{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.intro__image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-
-.abc__nav{
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    text-align: center;
+.abc__nav {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  text-align: center;
 }
 
 .abc__notes {
-    list-style: none;
+  list-style: none;
 }
 
-@media (min-width: 1200px){
-    .abc__nav{
-        margin-left: 5em;
-        margin-right: 5em;
-    }
+@media (min-width: 1200px) {
+  .abc__nav {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
 
-    .forceusers, .techusers{
-        padding-right: 100px;
-        padding-left: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1000px;
-    }
+  .forceusers,
+  .techusers {
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
 
-    .title__list a{
-        margin-right: 3rem;
-        margin-left: 3rem;
-        font-size: 1.5em
-    }
-    section {
-        padding: 2em 2em;
-    }
-    .gameclass {
-        transition: transform 200ms ease-in-out;
-    }
-    .gameclass:hover{
-        transform: scale(1.1);
-    }
+  .title__list a {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    font-size: 1.5em;
+  }
+  section {
+    padding: 2em 2em;
+  }
+  .gameclass {
+    transition: transform 200ms ease-in-out;
+  }
+  .gameclass:hover {
+    transform: scale(1.1);
+  }
 }
-.pts__status--wrapper, .pts__status {
-    display: none;
+.pts__status--wrapper,
+.pts__status {
+  display: none;
 }
 @media (min-width: 1024px) {
-    .pts__status--wrapper {
-        /* margin-top: 5rem; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .pts__status {
-        display: block;
-        width: 1000px;
-        height:800px;
-    }
+  .pts__status--wrapper {
+    /* margin-top: 5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pts__status {
+    display: block;
+    width: 1000px;
+    height: 800px;
+  }
 }
 .pts__status--title {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
-
-
-
-
 /* Buttons */
-.forceusers, .techusers{
-    text-align: center;
-    border-style:solid;
-    border-color: var(--clr-accent);
-    /* padding-right: 100px;
+.forceusers,
+.techusers {
+  text-align: center;
+  border-style: solid;
+  border-color: var(--clr-accent);
+  /* padding-right: 100px;
     padding-left: 100px; */
 }
 .techusers {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 .forceusers {
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 .techusers {
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
-.gameclass{
-    display: inline-block;
-    /* padding: .5em .5em; */
-    margin: 1em .5em 1em .5em;
-    background: var(--clr-accent);
-    color: var(--clr-light);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
+.gameclass {
+  display: inline-block;
+  /* padding: .5em .5em; */
+  margin: 1em 0.5em 1em 0.5em;
+  background: var(--clr-accent);
+  color: var(--clr-light);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
 }
 
-.gameclass__sage, .gameclass__shadow, .gameclass__commando, 
-.gameclass__vanguard, .gameclass__gunslinger, .gameclass__scoundrel {
-    opacity: 0.3;
+.gameclass__sage,
+.gameclass__shadow,
+.gameclass__commando,
+.gameclass__vanguard,
+.gameclass__gunslinger,
+.gameclass__scoundrel {
+  opacity: 0.3;
 }
-.gameclass__table th{
-    color: var(--clr-accent)
+.gameclass__table th {
+  color: var(--clr-accent);
 }
-table, td, th {
-    border: 1px solid var(--clr-accent);
+table,
+td,
+th {
+  border: 1px solid var(--clr-accent);
 }
 .gameclass__table {
-width: 95%;
-border-collapse: collapse;
-margin-right: auto;
-margin-left: auto;
+  width: 95%;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
 }
 .gameclass__table__level {
-    width: 15%;
+  width: 15%;
 }
 .gameclass__table__abc {
-    width: 28.3%;
-    color: var(--clr-dev) !important;
+  width: 28.3%;
+  color: var(--clr-dev) !important;
 }
 .gameclass__table__abc--title {
-    width: 28.3%;
+  width: 28.3%;
 }
 .gameclass__table__ability {
-    width: 84.9%;
-    color: #ce49b8 !important;
+  width: 84.9%;
+  color: #ce49b8 !important;
 }
 .gameclass__table__abc--ability {
-    width: 28.3%;
-    color: #ce49b8 !important;
+  width: 28.3%;
+  color: #ce49b8 !important;
 }
-
-
 
 .gameclass__abc__title {
-    /* padding: .5rem; */
-    border-style: solid;
-    border-color: var(--clr-dev);
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  /* padding: .5rem; */
+  border-style: solid;
+  border-color: var(--clr-dev);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.gameclass__1, .gameclass__2, .gameclass__3 {
-    margin-bottom: 5rem;
+.gameclass__1,
+.gameclass__2,
+.gameclass__3 {
+  margin-bottom: 5rem;
 }
-
-
 
 .gameclass__guardian__abc {
-    display: none;
+  display: none;
 }
-.gameclass__guardian--on .gameclass__guardian__abc{
-    display: block;
+.gameclass__guardian--on .gameclass__guardian__abc {
+  display: block;
 }
 
 .gameclass__sentinel__abc {
-    display: none;
+  display: none;
 }
-.gameclass__sentinel--on .gameclass__sentinel__abc{
-    display: block;
+.gameclass__sentinel--on .gameclass__sentinel__abc {
+  display: block;
 }
 
 .gameclass__sage__abc {
-    display: none;
+  display: none;
 }
 /* .gameclass__sage--on .gameclass__sage__abc{
     display: block;
 } */
 
 .gameclass__shadow__abc {
-    display: none;
+  display: none;
 }
 /* .gameclass__shadow--on .gameclass__shadow__abc{
     display: block;
 } */
 
 .gameclass__commando__abc {
-    display: none;
+  display: none;
 }
-.gameclass__commando--on .gameclass__commando__abc{
-    display: block;
+.gameclass__commando--on .gameclass__commando__abc {
+  display: block;
 }
 
 .gameclass__vanguard__abc {
-    display: none;
+  display: none;
 }
 /* .gameclass__vanguard--on .gameclass__vanguard__abc{
     display: block;
 } */
 
 .gameclass__gunslinger__abc {
-    display: none;
+  display: none;
 }
 /* .gameclass__gunslinger--on .gameclass__gunslinger__abc{
     display: block;
 } */
 
 .gameclass__scoundrel__abc {
-    display: none;
+  display: none;
 }
 /* .gameclass__scoundrel--on .gameclass__scoundrel__abc{
     display: block;
 } */
+
+footer {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
