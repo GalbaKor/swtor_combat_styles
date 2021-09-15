@@ -234,7 +234,6 @@ img {
   font-weight: var(--fw-bold);
 }
 
-.gameclass__sage,
 .gameclass__shadow,
 .gameclass__commando,
 .gameclass__vanguard,
@@ -307,9 +306,9 @@ th {
 .gameclass__sage__abc {
   display: none;
 }
-/* .gameclass__sage--on .gameclass__sage__abc{
-    display: block;
-} */
+.gameclass__sage--on .gameclass__sage__abc {
+  display: block;
+}
 
 .gameclass__shadow__abc {
   display: none;
