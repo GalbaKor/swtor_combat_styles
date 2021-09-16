@@ -26,6 +26,7 @@
         <h3 class="title__description">This site is intended as an unbiased guide to help explain how Combat Styles, Loadouts, Gear and Discipline ABC systems will work in 7.0 along with a list of the current ABC options available to test on the PTS.</h3>
         <div class="title__list">
             <a href="https://www.swtor.com/community/forumdisplay.php?f=308" class="devquote" target=blank>PTS Forums</a>
+            <a href="#abc" class="devquote">Skip to new Ability Tree options</a>
             <a href="https://www.swtor.com/info/news" class="devquote" target=blank>SWTOR News</a>
         </div>
         <!-- <br>
@@ -1191,9 +1192,13 @@
             <!-- Shadow -->
             <a class="gameclass gameclass__shadow">Shadow/Assassin</a>
             <div class="gameclass__abc gameclass__shadow__abc">
-                <!-- FOCUS -->
+                <ul class="abc__notes">
+                    <li>Pruned abilities: Spike and guard for non tanks.</li>
+                    <li>ABC locked abilities: Overload (lvl 20 dps / lvl 70 tank), Overcharge Saber (lvl 35). Severing Slash, Force Shroud (dps only), Whirlwind.</li>
+                </ul>
+                <!-- Darkness -->
                 <div class="gameclass__1">
-                <h2 class="devquote gameclass__abc__title">Focus</h2>
+                <h2 class="devquote gameclass__abc__title">Darkness</h2>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">Level</th>
@@ -1205,105 +1210,92 @@
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">10</th>
-                        <th class="gameclass__table__ability">Focused Burst - single target burst damage ability</th>
+                        <th class="gameclass__table__ability">Recklessness + depredating volts
+</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">15</th>
-                        <th class="gameclass__table__abc">Energy Barrage - Adds Energy Damage to Blade Barrage and it now immobilizes the target. </th>
-                        <th class="gameclass__table__abc">Blade Burst - Blade Storm becomes AoE and slows</th>
-                        <th class="gameclass__table__abc--ability">Saber Throw - Gain the Saber Throw Ability</th>
+                        <th class="gameclass__table__abc">Antagonizing volts - increases the crit hit chance, damage and threat of depredating volts by 10%</th>
+                        <th class="gameclass__table__abc">Energized volts - depredeating volts deals 20% more damage to and restores 5 force when hitting mind controlled targets</th>
+                        <th class="gameclass__table__abc">Chained volts - depredating volts chains and hits nearby targets</th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">20</th>
-                        <th class="gameclass__table__abc">Zenith - Increases critical chance after using Focused Burst</th>
-                        <th class="gameclass__table__abc">Focusing Strike - Focused Burst deals 15% more damage</th>
-                        <th class="gameclass__table__abc">Unstable Focus - Focused Burst now hits in AoE</th>
+                        <th class="gameclass__table__abc">Energized shock - shock deals 50% more crit damage and extends present mind control effects on the target by 3 seconds</th>
+                        <th class="gameclass__table__abc--ability">Spike</th>
+                        <th class="gameclass__table__abc">Force magnetism - force cloak increases move speed by 50% and slows nearby targets by 75% for 2.5s</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">25</th>
-                        <th class="gameclass__table__ability">Zealous Leap - A short ranged leap with high damage</th>
+                        <th class="gameclass__table__ability">Dark Ward</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">30</th>
-                        <th class="gameclass__table__abc">Zealous Discovery - Reduce the CD of Combat Focus every time you activate Zealous Leap</th>
-                        <th class="gameclass__table__abc">Zealous Defense - Receive a small shield every time Zealous Leap hits a target</th>
-                        <th class="gameclass__table__abc">Zealous Annihilation - Zealous Leap now also hits in AoE</th>
+                        <th class="gameclass__table__abc">Dusk Ward - each time a dark ward charge is consumed it reduces force cloaks cooldown by 2 seconds. If dark ward is broken by damage, nearby enemies have their accuracy reduced by 20% for 6 seconds</th>
+                        <th class="gameclass__table__abc">Twilight Ward - each time a dark ward charge is consumed it reduces recklessness's cooldown by 2 seconds. If dark ward is broken by damage, gain 1 recklessness charge</th>
+                        <th class="gameclass__table__abc">Gloom Ward - each time a dark ward charge is consumed it reduces mass mind control's cooldown by 2 seconds. If dark ward is broken by damage, it deals damage to nearby enemies generates high threat and resets the cooldown of wither and discharge
+</th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">35</th>
-                        <th class="gameclass__table__abc">Focused Mediation - Dealing damage with Force Energy generates AP</th>
-                        <th class="gameclass__table__abc">Critical Conditions - Critical hits with Force Energy reduce the Cooldown of Combat Focus</th>
-                        <th class="gameclass__table__abc--ability">Awe - Gain the Awe Ability</th>
+                        <th class="gameclass__table__abc">Dark Forces - dealing damage to a mind controlled target restores 2 force and heals you for 1% max hp</th>
+                        <th class="gameclass__table__abc">Reckless Defence - Consuming a charge of recklessness grants you and nearby allies 5% DR stacking up to 3 times and lasting 6 seconds</th>
+                        <th class="gameclass__table__abc--ability">Overcharge Saber </th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">40</th>
-                        <th class="gameclass__table__ability">Force Exhaustion - Slow the target and apply a high damage DoT</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">45</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        <th class="gameclass__table__ability">Wither </th>
                     </tr>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">50</th>
-                        <th class="gameclass__table__abc">Battlefield Command - Taking damage reduces the Cooldown of Force Leap</th>
-                        <th class="gameclass__table__abc">Path Carver- Increases AoE damage done</th>
-                        <th class="gameclass__table__abc">Defiance - Build AP whenever you are stunned</th>
+                        <th class="gameclass__table__abc">Formless Phantom - as darkness reduce damage taken while stunned by 30%, as deception or hatred reduce aoe damage taken by 30%</th>
+                        <th class="gameclass__table__abc">Fade - reduce the cooldown of force cloak by 30 seconds and extend its duration by 5 seconds</th>
+                        <th class="gameclass__table__abc">Dark Stability - Deflection grants 6 seconds immunity towards stun, sleep, lift and incapacitating effects
+</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">55</th>
-                        <th class="gameclass__table__ability">Concentrated Slice - A strong single-target weapon attack</th>
+                        <th class="gameclass__table__ability">Force Pull </th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">60</th>
-                        <th class="gameclass__table__abc">Preparation - Leaving combat now reduces the remaining cooldown on some skills</th>
-                        <th class="gameclass__table__abc">Narrowed Focus - Taking AoE damage now generates AP</th>
-                        <th class="gameclass__table__abc">Second Wind - Lowers the cooldown of Unleash. Unleash now also heals you</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">65</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        <th class="gameclass__table__abc">Force Phase - force speed and phantom stride remove and negate movement impairing effects for 2 seconds</th>
+                        <th class="gameclass__table__abc">Speed Surge - shock, ball lightning and eradicate increase speed by 50% for 9 seconds once per 18 seconds</th>
+                        <th class="gameclass__table__abc">Lambaste - increase lacerate damage by 25%</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">70</th>
-                        <th class="gameclass__table__abc--ability">Blade Blitz</th>
-                        <th class="gameclass__table__abc--ability">Saber Reflect</th>
-                        <th class="gameclass__table__abc--ability">Enure</th>
+                        <th class="gameclass__table__abc--ability">Overload</th>
+                        <th class="gameclass__table__abc--ability">Severing Slash</th>
+                        <th class="gameclass__table__abc--ability">Whirlwind</th>
                     </tr>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">75</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">80</th>
-                        <th class="gameclass__table__abc">(A+B choice on PTS)War Master - Force Leap grants immunity to movement impairing effects and grants Dispatch</th>
-                        <th class="gameclass__table__abc">Purifying Sweep - Sweep now applies debuffs</th>
-                        <th class="gameclass__table__abc">Through Peace - Reduces Enure’s Cooldown</th>
+                        <th class="gameclass__table__abc">FoReaper's Rush - activating phantom stride allows use of assassinate on any % hp target. If the target is killed within 10 seconds, phantom stride's cooldown is reset. </th>
+                        <th class="gameclass__table__abc">Avoidance - reduces the cooldown of jolt by 2 seconds, force speed by 5 seconds and unbreakable will by 30 seconds</th>
+                        <th class="gameclass__table__abc">Shroud of madness - activating force cloak grants 2 seconds of force shroud</th>
                     </tr>
                 </table>
                 </div>
-                <!-- VIGILANCE -->
+                <!-- Deception -->
                 <div class="gameclass__2">
-                <h2 class="devquote gameclass__abc__title">Vigilance</h2>
+                <h2 class="devquote gameclass__abc__title">Deception</h2>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">Level</th>
@@ -1312,113 +1304,95 @@
                         <th class="gameclass__table__abc--title">C</th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">10</th>
-                        <th class="gameclass__table__ability">Focused Burst - single target burst damage ability</th>
+                        <th class="gameclass__table__ability">Recklessness + Reaping Strike
+</th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">15</th>
-                        <th class="gameclass__table__abc">Energy Barrage - Adds Energy Damage to Blade Barrage and it now immobilizes the target. </th>
-                        <th class="gameclass__table__abc">Blade Burst - Blade Storm becomes AoE and slows</th>
-                        <th class="gameclass__table__abc--ability">Saber Throw - Gain the Saber Throw Ability</th>
+                        <th class="gameclass__table__abc">Penetrating Slash - increase the armour pen and crit chance of reaping strike by 20%</th>
+                        <th class="gameclass__table__abc">Reaper - killing an enemy within 3 seconds of using reaping strike resets the cooldown of all damage abilities and increases crit chance by 40% for 6 seconds</th>
+                        <th class="gameclass__table__abc">Energized blade - critically hitting with force attacks resets the cooldown of reaping strike, but reaping strike costs 10 extra force (15 -> 25)
+</th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">20</th>
-                        <th class="gameclass__table__abc">Zenith - Increases critical chance after using Focused Burst</th>
-                        <th class="gameclass__table__abc">Focusing Strike - Focused Burst deals 15% more damage</th>
-                        <th class="gameclass__table__abc">Unstable Focus - Focused Burst now hits in AoE</th>
+                        <th class="gameclass__table__abc">Maul spike - dealing damage with maul from stealth stuns the target for 2 seconds and knocks down standard and weak targets</th>
+                        <th class="gameclass__table__abc--ability">Overload </th>
+                        <th class="gameclass__table__abc">Force magnetism - force cloak increases move speed by 50% and slows nearby targets by 75% for 2.5s</th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">25</th>
-                        <th class="gameclass__table__ability">Zealous Leap - A short ranged leap with high damage</th>
+                        <th class="gameclass__table__ability">Voltaic Slash</th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">30</th>
-                        <th class="gameclass__table__abc">Zealous Discovery - Reduce the CD of Combat Focus every time you activate Zealous Leap</th>
-                        <th class="gameclass__table__abc">Zealous Defense - Receive a small shield every time Zealous Leap hits a target</th>
-                        <th class="gameclass__table__abc">Zealous Annihilation - Zealous Leap now also hits in AoE</th>
+                        <th class="gameclass__table__abc">Reckless Voltage - dealing damage with voltaic slash reduces the cooldown of recklessness by 2 seconds</th>
+                        <th class="gameclass__table__abc">Voltaic Engine - voltage stacks built by voltaic slash increase crit chance by 10%</th>
+                        <th class="gameclass__table__abc">Voltaic Defence - voltage stacks built by voltaic slash increase damage reduction by 5%. Voltaic slash slows targets by 30% for 6 seconds </th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">35</th>
-                        <th class="gameclass__table__abc">Focused Mediation - Dealing damage with Force Energy generates AP</th>
-                        <th class="gameclass__table__abc">Critical Conditions - Critical hits with Force Energy reduce the Cooldown of Combat Focus</th>
-                        <th class="gameclass__table__abc--ability">Awe - Gain the Awe Ability</th>
+                        <th class="gameclass__table__abc">Lightning Engine - crit hitting with voltaic slash or a direct force attack restores 10 force and 1% max hp up to once per second</th>
+                        <th class="gameclass__table__abc">Lightning Critical - force consuming melee attacks can now use and consume reckless charges. Once per 3 seconds, melee crits cause bonus elemental damage</th>
+                        <th class="gameclass__table__abc--ability">Overcharge Saber </th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">40</th>
-                        <th class="gameclass__table__ability">Force Exhaustion - Slow the target and apply a high damage DoT</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">45</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        <th class="gameclass__table__ability">Low Slash </th>
                     </tr>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">50</th>
-                        <th class="gameclass__table__abc">Battlefield Command - Taking damage reduces the Cooldown of Force Leap</th>
-                        <th class="gameclass__table__abc">Path Carver- Increases AoE damage done</th>
-                        <th class="gameclass__table__abc">Defiance - Build AP whenever you are stunned</th>
+                        <th class="gameclass__table__abc">Formless Phantom - as darkness reduce damage taken while stunned by 30%, as deception or hatred reduce aoe damage taken by 30%</th>
+                        <th class="gameclass__table__abc">Fade - reduce the cooldown of force cloak by 30 seconds and extend its duration by 5 seconds</th>
+                        <th class="gameclass__table__abc">Dark Stability - Deflection grants 6 seconds immunity towards stun, sleep, lift and incapacitating effects
+</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">55</th>
-                        <th class="gameclass__table__ability">Concentrated Slice - A strong single-target weapon attack</th>
+                        <th class="gameclass__table__ability">Lightning Ball  </th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">60</th>
-                        <th class="gameclass__table__abc">Preparation - Leaving combat now reduces the remaining cooldown on some skills</th>
-                        <th class="gameclass__table__abc">Narrowed Focus - Taking AoE damage now generates AP</th>
-                        <th class="gameclass__table__abc">Second Wind - Lowers the cooldown of Unleash. Unleash now also heals you</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">65</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        <th class="gameclass__table__abc">Force Phase - force speed and phantom stride remove and negate movement impairing effects for 2 seconds</th>
+                        <th class="gameclass__table__abc">Speed Surge - shock, ball lightning and eradicate increase speed by 50% for 9 seconds once per 18 seconds</th>
+                        <th class="gameclass__table__abc">Lambaste - increase lacerate damage by 25%</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">70</th>
-                        <th class="gameclass__table__abc--ability">Blade Blitz</th>
-                        <th class="gameclass__table__abc--ability">Saber Reflect</th>
-                        <th class="gameclass__table__abc--ability">Enure</th>
+                        <th class="gameclass__table__abc--ability">Force Shroud</th>
+                        <th class="gameclass__table__abc--ability">Severing Slash</th>
+                        <th class="gameclass__table__abc--ability">Whirlwind</th>
                     </tr>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">75</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">80</th>
-                        <th class="gameclass__table__abc">(A+B choice on PTS)War Master - Force Leap grants immunity to movement impairing effects and grants Dispatch</th>
-                        <th class="gameclass__table__abc">Purifying Sweep - Sweep now applies debuffs</th>
-                        <th class="gameclass__table__abc">Through Peace - Reduces Enure’s Cooldown</th>
+                        <th class="gameclass__table__abc">FoReaper's Rush - activating phantom stride allows use of assassinate on any % hp target. If the target is killed within 10 seconds, phantom stride's cooldown is reset. </th>
+                        <th class="gameclass__table__abc">Avoidance - reduces the cooldown of jolt by 2 seconds, force speed by 5 seconds and unbreakable will by 30 seconds</th>
+                        <th class="gameclass__table__abc">Shroud of madness - activating force cloak grants 2 seconds of force shroud</th>
                     </tr>
                 </table>
                 </div>
-                <!-- DEFENSE -->
+                <!-- Hatred -->
                 <div class="gameclass__3">
-                <h2 class="devquote gameclass__abc__title">Defense</h2>
+                <h2 class="devquote gameclass__abc__title">Hatred</h2>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">Level</th>
@@ -1427,112 +1401,91 @@
                         <th class="gameclass__table__abc--title">C</th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">10</th>
-                        <th class="gameclass__table__ability">Focused Burst - single target burst damage ability</th>
+                        <th class="gameclass__table__ability">Recklessness + Death Field</th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">15</th>
-                        <th class="gameclass__table__abc">Energy Barrage - Adds Energy Damage to Blade Barrage and it now immobilizes the target. </th>
-                        <th class="gameclass__table__abc">Blade Burst - Blade Storm becomes AoE and slows</th>
-                        <th class="gameclass__table__abc--ability">Saber Throw - Gain the Saber Throw Ability</th>
+                        <th class="gameclass__table__abc">Death Focus - death field reduces the cooldown of recklessness by 5 seconds and restores 5 force for each enemy hit</th>
+                        <th class="gameclass__table__abc">Penetrating Death - death field deals 10% more damage and increases your armor penetration by 10% for each target hit for 10 seconds</th>
+                        <th class="gameclass__table__abc">Deadly Field - death field gains an additional charge. Killing a target or activating recklessness generates one charge</th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">20</th>
-                        <th class="gameclass__table__abc">Zenith - Increases critical chance after using Focused Burst</th>
-                        <th class="gameclass__table__abc">Focusing Strike - Focused Burst deals 15% more damage</th>
-                        <th class="gameclass__table__abc">Unstable Focus - Focused Burst now hits in AoE</th>
+                        <th class="gameclass__table__abc">Maul spike - dealing damage with maul from stealth stuns the target for 2 seconds and knocks down standard and weak targets</th>
+                        <th class="gameclass__table__abc--ability">Overload</th>
+                        <th class="gameclass__table__abc">Force magnetism - force cloak increases move speed by 50% and slows nearby targets by 75% for 2.5s</th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">25</th>
-                        <th class="gameclass__table__ability">Zealous Leap - A short ranged leap with high damage</th>
+                        <th class="gameclass__table__ability">Eradicate </th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">30</th>
-                        <th class="gameclass__table__abc">Zealous Discovery - Reduce the CD of Combat Focus every time you activate Zealous Leap</th>
-                        <th class="gameclass__table__abc">Zealous Defense - Receive a small shield every time Zealous Leap hits a target</th>
-                        <th class="gameclass__table__abc">Zealous Annihilation - Zealous Leap now also hits in AoE</th>
+                        <th class="gameclass__table__abc">Ruin - when a target affected by eradicate dies, it bounces to another target dealing its initial damage and causes that target to take 25% more damage from your next eradicate's initial hit</th>
+                        <th class="gameclass__table__abc">Eradication Ray - eradicate now deals all its periodic damage over 1 second</th>
+                        <th class="gameclass__table__abc">Befall - dealing damage with eradicate increases the crit hit chance of period effects against that target by 10%</th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">35</th>
-                        <th class="gameclass__table__abc">Focused Mediation - Dealing damage with Force Energy generates AP</th>
-                        <th class="gameclass__table__abc">Critical Conditions - Critical hits with Force Energy reduce the Cooldown of Combat Focus</th>
-                        <th class="gameclass__table__abc--ability">Awe - Gain the Awe Ability</th>
+                        <th class="gameclass__table__abc">Maliciousness - killing a target and activating recklessness resets the cooldown of all melee attacks and eradicate and increases their damage by 10% for 20 seconds. Stacks up to two times</th>
+                        <th class="gameclass__table__abc">Hungering Force - the crit hit chance of your periodic effects are increased by 5% and whenever you are healed by a class effect, you generate 1 force</th>
+                        <th class="gameclass__table__abc--ability">Overcharge Saber </th>
                     </tr>
                 </table>
-
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">40</th>
-                        <th class="gameclass__table__ability">Force Exhaustion - Slow the target and apply a high damage DoT</th>
-                    </tr>
-                    <tr>
-                        <th class="gameclass__table__level">45</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        <th class="gameclass__table__ability">Creeping Terror </th>
                     </tr>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">50</th>
-                        <th class="gameclass__table__abc">Battlefield Command - Taking damage reduces the Cooldown of Force Leap</th>
-                        <th class="gameclass__table__abc">Path Carver- Increases AoE damage done</th>
-                        <th class="gameclass__table__abc">Defiance - Build AP whenever you are stunned</th>
+                        <th class="gameclass__table__abc">Formless Phantom - as darkness reduce damage taken while stunned by 30%, as deception or hatred reduce aoe damage taken by 30%</th>
+                        <th class="gameclass__table__abc">Fade - reduce the cooldown of force cloak by 30 seconds and extend its duration by 5 seconds</th>
+                        <th class="gameclass__table__abc">Dark Stability - Deflection grants 6 seconds immunity towards stun, sleep, lift and incapacitating effects
+</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">55</th>
-                        <th class="gameclass__table__ability">Concentrated Slice - A strong single-target weapon attack</th>
+                        <th class="gameclass__table__ability">Leeching Strike</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">60</th>
-                        <th class="gameclass__table__abc">Preparation - Leaving combat now reduces the remaining cooldown on some skills</th>
-                        <th class="gameclass__table__abc">Narrowed Focus - Taking AoE damage now generates AP</th>
-                        <th class="gameclass__table__abc">Second Wind - Lowers the cooldown of Unleash. Unleash now also heals you</th>
-                    </tr>
-                </table>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">65</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
+                        <th class="gameclass__table__abc">Force Phase - force speed and phantom stride remove and negate movement impairing effects for 2 seconds</th>
+                        <th class="gameclass__table__abc">Speed Surge - shock, ball lightning and eradicate increase speed by 50% for 9 seconds once per 18 seconds</th>
+                        <th class="gameclass__table__abc">Lambaste - increase lacerate damage by 25%</th>
                     </tr>
                 </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">70</th>
-                        <th class="gameclass__table__abc--ability">Blade Blitz</th>
-                        <th class="gameclass__table__abc--ability">Saber Reflect</th>
-                        <th class="gameclass__table__abc--ability">Enure</th>
+                        <th class="gameclass__table__abc--ability">Overload</th>
+                        <th class="gameclass__table__abc--ability">Severing Slash</th>
+                        <th class="gameclass__table__abc--ability">Whirlwind</th>
                     </tr>
-                <table class="gameclass__table gameclass__guardian__table">
-                    <tr>
-                        <th class="gameclass__table__level">75</th>
-                        <th class="gameclass__table__ability">New ability granted but there is no choice to be made and it is not discipline specific</th>
-                    </tr>
-                </table>
                 <table class="gameclass__table gameclass__guardian__table">
                     <tr>
                         <th class="gameclass__table__level">80</th>
-                        <th class="gameclass__table__abc">(A+B choice on PTS)War Master - Force Leap grants immunity to movement impairing effects and grants Dispatch</th>
-                        <th class="gameclass__table__abc">Purifying Sweep - Sweep now applies debuffs</th>
-                        <th class="gameclass__table__abc">Through Peace - Reduces Enure’s Cooldown</th>
+                        <th class="gameclass__table__abc">FoReaper's Rush - activating phantom stride allows use of assassinate on any % hp target. If the target is killed within 10 seconds, phantom stride's cooldown is reset. </th>
+                        <th class="gameclass__table__abc">Avoidance - reduces the cooldown of jolt by 2 seconds, force speed by 5 seconds and unbreakable will by 30 seconds</th>
+                        <th class="gameclass__table__abc">Shroud of madness - activating force cloak grants 2 seconds of force shroud</th>
                     </tr>
                 </table>
                 </div>
             </div>
-
         </div>
 
         <div class="techusers">

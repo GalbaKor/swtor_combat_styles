@@ -117,6 +117,7 @@ section {
 ul {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0;
 }
 .section__content ul {
   margin-top: 1em;
@@ -239,7 +240,6 @@ img {
   font-weight: var(--fw-bold);
 }
 
-.gameclass__shadow,
 .gameclass__commando,
 .gameclass__vanguard,
 .gameclass__gunslinger,
@@ -318,9 +318,9 @@ th {
 .gameclass__shadow__abc {
   display: none;
 }
-/* .gameclass__shadow--on .gameclass__shadow__abc{
-    display: block;
-} */
+.gameclass__shadow--on .gameclass__shadow__abc {
+  display: block;
+}
 
 .gameclass__commando__abc {
   display: none;
