@@ -510,9 +510,9 @@
             <a class="gameclass gameclass__sentinel">Sentinel/Marauder (mostly correct)</a>
             <div class="gameclass__abc gameclass__sentinel__abc">
                 <ul class="abc__notes">
-                    <li>Pruned abilities: Crippling Slash, Obfuscate, Awe</li>
+                    <li>Pruned abilities: Crippling Slash, Obfuscate, Awe, Force Stasis</li>
                     <li>ABC locked abilities: Force Clarity, Transcendence, Blade Blitz, Guarded by the Force, Force Camouflage</li>
-                    <li>Missing Force Stasis confirmed a bug.</li>
+                    <li>Missing Force Stasis was at first thought to be a bug, but it has since been confirmed that Sentinel losing Force Stasis is intended.</li>
                 </ul>
                 <!-- Watchman -->
                 <div class="gameclass__1">
@@ -534,15 +534,15 @@
                 <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">15</th>
-                        <th class="gameclass__table__abc">Melting Center - Force Melt’s initial damage is quadrupled when it consumes a Zen charge.</th>
+                        <th class="gameclass__table__abc">Melting Center - Force Melt builds 10 centering and its initial damage is quadrupled when it consumes a Zen charge</th>
                         <th class="gameclass__table__abc">Juyo Melt - Force Melt immediately builds 6 Juyo Form stacks. Force Melt damage is increased per Juyo Form stack.</th>
                         <th class="gameclass__table__abc">Critical Melt - While Force Melt is on a target, the crit chance of all your burn attacks on that target increases</th>
                     </tr>
                     <tr>
                         <th class="gameclass__table__level">20</th>
-                        <th class="gameclass__table__abc">Blade Barrage + Burning Barrage - Blade Barrage deals additional burning damage on each hit and immobilizes the target for 3 seconds</th>
-                        <th class="gameclass__table__abc">Slash + Snaring Slash - Slash now slows the target by 50% for 10 seconds</th>
-                        <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide speed and defense buff. Also breaks roots and snares
+                        <th class="gameclass__table__abc">Burning Barrage - Blade Barrage deals additional burning damage on each hit</th>
+                        <th class="gameclass__table__abc">Snaring Slash - Slash now slows the target by 50% for 10 seconds</th>
+                        <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide 80% speed boost and 10% defense buff. Also breaks roots and snares
                         </th>
                     </tr>
                 </table>
@@ -555,9 +555,9 @@
                 <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">30</th>
-                        <th class="gameclass__table__abc">Cauterizing Focus - When activating Cauterize consumes a Zen charge, it immediately refunds 2 Focus. Applies trauma</th>
-                        <th class="gameclass__table__abc">Force Lash - Direct Force attack that’s damage and crit chance are scaled by the number of burns currently on the target</th>
-                        <th class="gameclass__table__abc">Flaming Wave - Cauterize procs a Flaming Wave version of Force Sweep when activated.
+                        <th class="gameclass__table__abc">Cauterizing Focus - cauterize applies trauma and refunds its cost when used under zen</th>
+                        <th class="gameclass__table__abc">Force Lash - Replaces cauterize with a direct damage attack which deals more damage for each dot present (no longer applies a DoT)</th>
+                        <th class="gameclass__table__abc">Flaming Wave - Cauterize's initial hit causes nearby burning targets to take damage
                         </th>
                     </tr>
                     <table class="gameclass__table gameclass__sentinel__table">
@@ -569,8 +569,8 @@
                     <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">35</th>
-                        <th class="gameclass__table__abc">Burning Zen - Activating Zen immediately maxes out your Focus and makes your next direct attack critically hit. Periodic burn damage no longer consumes Zen charges</th>
-                        <th class="gameclass__table__abc">Burning Center - Build Centering even during Zen. Consuming a charge of Zen builds 1 Centering.</th>
+                        <th class="gameclass__table__abc">Burning Zen - once per second, melee attacks do more damage during zen</th>
+                        <th class="gameclass__table__abc">Burning Center - crit hitting with a periodic burn builds 2 centering even during zen (once per 2 seconds)</th>
                         <th class="gameclass__table__abc--ability">Force Clarity / Furious Power - Next attack deals 25% more damage</th>
                     </tr>
                 </table>
@@ -604,8 +604,8 @@
                 <table class="gameclass__table gameclass__sentinel__table">
                     <tr>
                         <th class="gameclass__table__level">60</th>
-                        <th class="gameclass__table__abc">Trailblazer - Increases certain AOE damage</th>
-                        <th class="gameclass__table__abc">Jedi Crusader - While Rebuke is active, it generates 1 Focus whenever you are attacked.</th>
+                        <th class="gameclass__table__abc">Trailblazer - cyclone slash deals 15% more damage</th>
+                        <th class="gameclass__table__abc">Jedi adjudicator - strike attacks reduce the cooldown of rebuke by 3 seconds. Rebuke generates 1 focus every 2 seconds when attacked</th>
                         <th class="gameclass__table__abc">Zealous Ward - Getting hit during Saber Ward heals you and grants crowd control immunity.
                         </th>
                     </tr>
@@ -634,7 +634,7 @@
                         <th class="gameclass__table__level">80</th>
                         <th class="gameclass__table__abc">Stoic - Increases damage reduction, builds centering when attacked</th>
                         <th class="gameclass__table__abc">Incisor - Adds snare to certain attacks</th>
-                        <th class="gameclass__table__abc">Contemplation - Resting increases Fury/Centering.
+                        <th class="gameclass__table__abc">Inspired focus - inspiration generates 12 focus, attacks that consume focus heal you for 1% hp
                         </th>
                     </tr>
                 </table>
@@ -661,14 +661,14 @@
                             <th class="gameclass__table__level">15</th>
                             <th class="gameclass__table__abc">Zen Lance - Whenever Lance consumes a stack of Zen, its cooldown is reset</th>
                             <th class="gameclass__table__abc">Puncture - Lance deals force energy damage in a straight line behind the target, piercing through multiple enemies.</th>
-                            <th class="gameclass__table__abc">Driving Lance - Lance now leaps to target, deals more damage and deals additional damage for each 10% of movement speed you have over 100%.
+                            <th class="gameclass__table__abc">Driving Lance - Lance now leaps to the target and deals more damage the faster you are
                             </th>
                         </tr>
                         <tr>
                             <th class="gameclass__table__level">20</th>
-                            <th class="gameclass__table__abc">Blade Barrage - Now deals additional force energy damage on each hit</th>
-                            <th class="gameclass__table__abc">Slash - Slash now slows the target by 50% for 10 seconds</th>
-                            <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide speed and defense buff. Also breaks roots and snares
+                            <th class="gameclass__table__abc">Energy Barrage - blade barrage deals additional force energy damage on each hit</th>
+                            <th class="gameclass__table__abc">Snaring Slash - Slash now slows the target by 50% for 10 seconds</th>
+                            <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide 80% speed and 10% defense buff. Also breaks roots and snares
                             </th>
                         </tr>
                     </table>
@@ -681,9 +681,9 @@
                     <table class="gameclass__table gameclass__sentinel__table">
                         <tr>
                             <th class="gameclass__table__level">30</th>
-                            <th class="gameclass__table__abc">Valor Blade - Activating Blade Rush reduces the cooldown of Valorous Call by 2 seconds and its critical hit chance is increased.</th>
-                            <th class="gameclass__table__abc"> Defensive Flourish - Activating Blade Rush increases your damage reduction slightly after each use.</th>
-                            <th class="gameclass__table__abc">Rush Down - Blade Rush deals more damage for each 10% movement speed you have over 100%.
+                            <th class="gameclass__table__abc">Valor Blade - Activating Blade Rush reduces the cooldown of Valorous Call by 2 seconds and its critical hit chance is increased by 20%</th>
+                            <th class="gameclass__table__abc"> Defensive Flourish - Activating Blade Rush increases your damage reduction by 2% stacking 3 times</th>
+                            <th class="gameclass__table__abc">Rush Down - Blade Rush deals more damage the faster you're moving
                             </th>
                         </tr>
                         <table class="gameclass__table gameclass__sentinel__table">
@@ -695,8 +695,8 @@
                         <table class="gameclass__table gameclass__sentinel__table">
                         <tr>
                             <th class="gameclass__table__level">35</th>
-                            <th class="gameclass__table__abc">Quickness - Dealing energy damage reduces the cooldown of each of your Focus spending attacks by 1 second.</th>
-                            <th class="gameclass__table__abc">Swiftness - Whenever you critically hit, your movement speed increases by 5% and crit chance by 2%, stacking up to 5 times.</th>
+                            <th class="gameclass__table__abc">Quickness - critting with force based energy attacks reduces the cooldown of all force consuming attacks by 1s</th>
+                            <th class="gameclass__table__abc">Swiftness - Whenever you critically hit, your movement speed increases by 5% and crit chance by 5%, stacking up to 5 times.</th>
                             <th class="gameclass__table__abc--ability">Force Clarity - Next attack deals 25% more damage
                             </th>
                         </tr>
@@ -733,8 +733,8 @@
                         <tr>
                             <th class="gameclass__table__level">60</th>
                             <th class="gameclass__table__abc">Zealous Ward. Getting hit during Saber Ward heals you and grants crowd control immunity.</th>
-                            <th class="gameclass__table__abc">Trailblazer. Increases certain AOE damage.</th>
-                            <th class="gameclass__table__abc">Jedi Crusader. While Rebuke is active, it generates 1 Focus whenever you are attacked.
+                            <th class="gameclass__table__abc">Trailblazer. Increases cyclone slash damage by 15%</th>
+                            <th class="gameclass__table__abc">Jedi Adjudicator - strike attacks reduce rebuke's cooldown by 3 seconds. While Rebuke is active, it generates 1 Focus whenever you are attacked every 2 seconds
 
                             </th>
                         </tr>
@@ -761,8 +761,8 @@
                     <table class="gameclass__table gameclass__sentinel__table">
                         <tr>
                             <th class="gameclass__table__level">80</th>
-                            <th class="gameclass__table__abc">Incisor - Adds snare to certain attacks</th>
-                            <th class="gameclass__table__abc">Contemplation - Resting increases Centering.</th>
+                            <th class="gameclass__table__abc">Inspired Focus - inspiration generates 12 focus, attacks that consume focus heal you for 1% hp</th>
+                            <th class="gameclass__table__abc">Incisor - adds a snare to certain attacks</th>
                             <th class="gameclass__table__abc">Stoic - Reduces damage taken and builds centering when attacked.
                             </th>
                         </tr>
@@ -788,16 +788,16 @@
                     <table class="gameclass__table gameclass__sentinel__table">
                         <tr>
                             <th class="gameclass__table__level">15</th>
-                            <th class="gameclass__table__abc">Zenith - Modifies Heightened Power to also increase crit chance by 20% in addition to increasing damage by 5%</th>
+                            <th class="gameclass__table__abc">Zenith - focused burst and force sweep increase crit chance by 20% for 6 seconds</th>
                             <th class="gameclass__table__abc">Unstable Focus - Focused Burst does AOE damage to enemies around the primary target.</th>
-                            <th class="gameclass__table__abc">Focusing Strike - Focused Burst deals more damage the more Focus you have and applies trauma.
+                            <th class="gameclass__table__abc">Focusing Strike - focused burst deals 15% more damage and applies trauma.
                             </th>
                         </tr>
                         <tr>
                             <th class="gameclass__table__level">20</th>
                             <th class="gameclass__table__abc">Kinetic Barrage - Blade Barrage deals additional Force kinetic damage</th>
                             <th class="gameclass__table__abc">Slash + Snaring Slash - Slash now slows the target by 50% for 10 seconds</th>
-                            <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide speed and defense buff. Also breaks roots and snares
+                            <th class="gameclass__table__abc--ability">Transcendence - Requires Centering. Grants raid-wide 80% speed and 10% defense buff. Also breaks roots and snares
                             </th>
                         </tr>
                     </table>
@@ -825,8 +825,8 @@
                         <table class="gameclass__table gameclass__sentinel__table">
                         <tr>
                             <th class="gameclass__table__level">35</th>
-                            <th class="gameclass__table__abc">Focused Meditation - Each time you deal damage with a force energy attack, you generate 1 Focus</th>
-                            <th class="gameclass__table__abc">Criticality - Critically hitting with a force energy attack builds 1 Centering. You can build Centering even during Zen.</th>
+                            <th class="gameclass__table__abc">Focused Meditation - Each time you deal damage with a force based kinetic attack, you generate 1 Focus</th>
+                            <th class="gameclass__table__abc">Criticality - your crit hit chance is increased by 25% during zen</th>
                             <th class="gameclass__table__abc--ability">Force Clarity / Furious Power - Next attack deals 25% more damage</th>
                         </tr>
                     </table>
@@ -860,8 +860,8 @@
                     <table class="gameclass__table gameclass__sentinel__table">
                         <tr>
                             <th class="gameclass__table__level">60</th>
-                            <th class="gameclass__table__abc">Trailblazer - Increases certain AOE damage</th>
-                            <th class="gameclass__table__abc">Jedi Crusader - While Rebuke is active, it generates 1 Focus whenever you are attacked.</th>
+                            <th class="gameclass__table__abc">Trailblazer - cyclone slash deals 15% more damage</th>
+                            <th class="gameclass__table__abc">Jedi Adjudicator - strike attacks reduce the cooldown of rebuke by 3 seconds. While Rebuke is active, it generates 1 Focus whenever you are attacked once per 2 seconds.</th>
                             <th class="gameclass__table__abc">Zealous Ward - Getting hit during Saber Ward heals you and grants crowd control immunity.
                             </th>
                         </tr>
@@ -889,7 +889,7 @@
                         <tr>
                             <th class="gameclass__table__level">80</th>
                             <th class="gameclass__table__abc">Stoic - Increases damage reduction, builds centering when attacked</th>
-                            <th class="gameclass__table__abc">Contemplation - Resting increases Fury/Centering.</th>
+                            <th class="gameclass__table__abc">Inspired Focus - inspiration generates 12 focus, attacks that consume focus heal you for 1% hp</th>
                             <th class="gameclass__table__abc">Incisor - Adds snare to certain attacks.
                             </th>
                         </tr>
